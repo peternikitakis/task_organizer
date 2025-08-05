@@ -31,6 +31,18 @@ Your application must make an HTTP `POST` request to the following endpoint:
     { "task_name": "Buy groceries", "due_date": "2025-08-03" }
   ]
 }
+
+```
+
+### Response Format:
+
+```json
+{
+  "tasks": [
+    { "task_name": "Buy groceries", "due_date": "2025-08-03" },
+    { "task_name": "Do laundry", "due_date": "2025-08-04" }
+  ]
+}
 ```
 
 ![UML Sequence Diagram](uml-diagram.png)
