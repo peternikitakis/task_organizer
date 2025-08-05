@@ -1,37 +1,36 @@
+# Microservice A - Task Organizer API
 
-# Microservice A: Task Organizer
+**For:** Adam Danielson  
+**Implemented by:** Peter Nikitakis
 
-This microservice receives a list of tasks and returns them sorted by due date.
+---
 
-## How to Run
+## Overview
 
-```bash
-pip install -r requirements.txt
-python main.py
-```
+This microservice receives a list of tasks and returns them sorted in ascending order by due date. It supports validation by skipping tasks with missing or invalid dates. The API follows REST principles and communicates using JSON.
 
-## How to Request Data
+---
 
-Send a POST request to `/organize` with a JSON body:
+## How to Request and Receive Data
+
+Your application must make an HTTP `POST` request to the following endpoint:
+
+**POST** `http://localhost:6000/organize`
+
+---
+
+### Request Format:
+
+- **Content-Type:** `application/json`
+- **Body:**
+
 ```json
 {
   "tasks": [
-    {"task_name": "Do laundry", "due_date": "2025-08-04"},
-    {"task_name": "Buy groceries", "due_date": "2025-08-03"}
+    { "task_name": "Do laundry", "due_date": "2025-08-04" },
+    { "task_name": "Buy groceries", "due_date": "2025-08-03" }
   ]
 }
-```
 
-## How to Receive Data
-
-You will receive a JSON response like:
-```json
-{
-  "tasks": [
-    {"task_name": "Buy groceries", "due_date": "2025-08-03"},
-    {"task_name": "Do laundry", "due_date": "2025-08-04"}
-  ]
-}
-```
 
 ![UML Sequence Diagram](uml-diagram.png)
