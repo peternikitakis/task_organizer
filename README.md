@@ -7,7 +7,7 @@
 
 ## Overview
 
-This microservice receives a list of tasks and returns them sorted in ascending order by due date. It supports validation by skipping tasks with missing or invalid dates. The API follows REST principles and communicates using JSON.
+This microservice receives a list of tasks and returns them sorted in ascending order by due date. It supports robust validation by skipping tasks with missing or invalid dates. The API follows REST principles and communicates using JSON.
 
 ---
 
