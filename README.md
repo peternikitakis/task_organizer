@@ -31,6 +31,6 @@ Your application must make an HTTP `POST` request to the following endpoint:
     { "task_name": "Buy groceries", "due_date": "2025-08-03" }
   ]
 }
-
+```
 
 ![UML Sequence Diagram](uml-diagram.png)
